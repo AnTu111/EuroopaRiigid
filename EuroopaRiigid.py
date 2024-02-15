@@ -40,12 +40,12 @@ def el_lisamine(riik_pealinn: dict, v_riik: str, v_pealinn: str) -> any:
 def mang(riik_pealinn: dict, pealinn_riik: dict, riigid: list):
        import random
        
-       for i in riigid[2]: 
+       for i in riigid[5]: 
              n = random.choice(riigid)
              vastus = input(f"Pealinn riigis {n}: ")
              õige_pealinn = riik_pealinn[n]
              if vastus.title() == õige_pealinn.title():
-                oige += oige
+                oige += 1
                 print("Õige!")
              else:
                print(f"Vale! Õige vastus: {õige_pealinn}")
