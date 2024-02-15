@@ -39,7 +39,7 @@ def el_lisamine(riik_pealinn: dict, v_riik: str, v_pealinn: str) -> any:
 
 def mang(riik_pealinn: dict, pealinn_riik: dict, riigid: list):
        import random
-       
+       oige = 0
        for i in riigid[5]: 
              n = random.choice(riigid)
              vastus = input(f"Pealinn riigis {n}: ")
